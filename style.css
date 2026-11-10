@@ -1,6 +1,7 @@
 * {
     margin: 0;
-    font-family: CrimsonText-Regular; 
+    padding: 0;
+    font-family: "Crimson Text", serif; 
 }
 
 header {
@@ -23,12 +24,13 @@ header img {
 nav {
     margin: 20px;
     padding: 20px;
-    diplay: flex;
+    display: flex;
     align-items: center;
     gap: 50px;
 }
 
 nav a {
+    color: #2E2A26;
     text-decoration: none;
 }
 
@@ -39,21 +41,54 @@ h1 {
 }
 
 h2 {
-    margin: 0;
+    margin-top: 120px;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-family: "Crimson Text", serif;
+    font-weight: 400;
+    font-style: normal;;
 }
 
 .hero {
-    max-weight: 750px;
+    background-color: #F9EFE7;
+    max-width: 750px;
     min-height: 550px;
-    background-image: url(asset/couverture-dada-design-9KGB4HspwsM-unsplash.jpg);
-    background-size: cover;
-    background-position: center;
-    opacity: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url(asset/couverture-dada-design-9KGB4HspwsM-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.4; 
+  z-index: -1;  
+}
+
 .container {
     margin: auto;
+    width: 450px;
 }
+
+.bouton {
+    margin: 50px 0;
+    display: flex;
+    gap: 30px;
+}
+
+.bouton a{
+    text-decoration: none;
+    border: 2px solid #2E2A26;
+    border-radius: 4px;
+    padding: 5px 15px;
+    color:#2E2A26; 
+}
+
+.bouton .voir {
+    border: none;
+}
+
