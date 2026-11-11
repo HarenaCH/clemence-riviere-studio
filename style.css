@@ -4,6 +4,30 @@
     font-family: "Crimson Text", serif; 
 }
 
+body {
+    position: relative;
+}
+
+h1 {
+    display: none;
+}
+
+h2 {
+    font-size: 40px;
+    font-family: "Crimson Text", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p {
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-size: 12px;
+}
+
+/* HEADER */
 header {
     background: rgba(0, 0, 0, 0.35);
     position: absolute;
@@ -35,17 +59,15 @@ nav a {
     text-decoration: none;
 }
 
-h1 {
-    display: none;
-}
 
-h2 {
+/* SECTION - HERO */
+.hero h2 {
     margin-top: 120px;
     text-transform: uppercase;
     font-size: 40px;
     font-family: "Crimson Text", serif;
     font-weight: 400;
-    font-style: normal;;
+    font-style: normal;
 }
 
 .hero {
@@ -91,5 +113,175 @@ h2 {
 
 .bouton .voir {
     border: none;
+}
+
+/* SECTION - PROMESSES */
+.promesses-content {
+    max-width: 100%;
+    margin-bottom: 72px;
+    padding: 0 72px 0 72px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-text {
+    margin: 24px 0 24px 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.right-text{
+    margin: 24px 0 24px 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* SECTION - PRESTATIONS */
+h2 {
+    width: 100%;
+    padding: 64px 0 76px 0;
+    text-align: center;
+}
+
+.prestations {
+    background-color: #2E2A26;
+    color: #F9EFE7;
+}
+
+.galerie-prestations {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 48px;
+    padding: 0 76px 0 76px;
+    margin-bottom: 76px;
+}
+
+.galerie-prestations article { 
+    width: 100%; 
+    display: flex;
+    justify-content: space-between;
+    /* flex-direction: row;  */
+    img {
+        height: 250px;
+        width: 500px;
+    }
+}
+
+.galerie-prestations-descriptions {
+    width: 50%;
+}
+
+.amenagement {
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: end;
+}
+
+/* SECTION - REALISATIONS */
+.h2-realisations{
+    width: 100%;
+    padding: 0 0 72px 0;
+    text-align: center;
+}
+
+.realisations {
+    background-color:#F9EFE7;
+    color: #2E2A26;
+    padding-bottom: 120px;
+}
+
+img {
+    height: 80px;
+    /* width: 150px; */ 
+}  
+
+.galerie-realisations {
+    padding: 0 48px 0 48px;
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+    flex-wrap: wrap;
+    margin: auto;
+    
+    article {
+    width: 100%;
+    max-width: 500px;
+    min-width: 50px;
+    img {
+      height: 250px;
+      width: 100%;
+    } 
+}
+}
+
+
+/* SECTION - TEMOIGNAGES */
+.temoignages {
+    padding-bottom: 120px;
+}
+
+.comment-cards {
+  margin: 0 32px 0 32px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 100px;
+  article {
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    
+  }
+}
+
+.comment-section {
+    display: flex;
+    flex-direction: column;
+    gap: 32px
+}
+
+
+/* FOOTER */
+
+footer h4 {
+    margin-bottom: 16px;
+}
+
+footer {
+    background-color: #F9EFE7;
+    color: #2E2A26;
+    padding-top: 48px;
+    a {
+    text-decoration: none;
+    color: #2E2A26;
+    }
+}
+
+.footer-content {
+    margin-right: 72px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 64px;
+}
+
+.footer-contacts {
+    display: flex;
+    flex-direction: column;
+}
+
+.copyright {
+    width: 100%;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
