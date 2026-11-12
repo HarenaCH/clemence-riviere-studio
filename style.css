@@ -26,7 +26,7 @@ h2 {
 p {
     font-family: "DM Sans", sans-serif;
     font-optical-sizing: auto;
-    font-weight: <weight>;
+    font-weight: weight;
     font-style: normal;
     font-size: 12px;
 }
@@ -47,6 +47,7 @@ header {
 }
 
 header img {
+    background-image: url(asset/logo.png);
     padding-left: 32px;
     padding-top: 8px;
     max-width: 200px;
@@ -184,7 +185,7 @@ nav a {
 /* SECTION - PRESTATIONS */
 h2 {
     width: 100%;
-    padding: 64px 0 76px 0;
+    padding: 64px 0 72px 0;
     text-align: center;
 }
 
@@ -197,7 +198,7 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 48px;
+    gap: 32px;
     padding: 0 76px 0 76px;
     margin-bottom: 76px;
 }
@@ -316,7 +317,7 @@ img {
 
 .comments {
     margin-top: 8px;
-    padding: 8px 12px 20px 4px;
+    padding: 8px 12px 20px 8px;
     border: #F9EFE7 solid 1px;
     border-radius: 6px;
     background-color: rgba(0, 0, 0, 0.25);
