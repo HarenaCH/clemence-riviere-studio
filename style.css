@@ -214,6 +214,10 @@ h2 {
     padding-left: 24px;
 }
 
+.prestations-images {
+    margin-left: 20px;
+}
+
 .descriptions-left {
     border-left: 0;
     border-right: #F9EFE7 solid 2px;
@@ -252,7 +256,7 @@ img {
     padding: 0 48px 0 48px;
     display: flex;
     justify-content: center;
-    gap: 120px;
+    gap: 80px;
     flex-wrap: wrap;
     margin: auto;
     
@@ -265,6 +269,13 @@ img {
       width: 100%;
     } 
 }
+}
+
+.galerie-realisations-descriptions {
+    display: flex;
+    flex-direction: column;
+    padding-top: 12px;
+    gap: 8px;
 }
 
 /* SECTION - TEMOIGNAGES */
@@ -367,6 +378,20 @@ footer {
     width: 100%;
     padding: 12px;
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* PAGE DE RENDEZ-VOUS */
+.booking-appointement {
+    width: 100%;
+    height: 750px;
+    background-image: url(asset/Group\ 2.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
