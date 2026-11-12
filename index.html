@@ -24,8 +24,8 @@
             <img src="asset/Logo typographique Clémence Rivière.png" alt="">
             <nav>
                 <a href="#prestations">Prestations</a>
-                <a href="">Réalisations</a>
-                <a href="">Témoignages</a>
+                <a href="#realisations">Réalisations</a>
+                <a href="#temoignages">Témoignages</a>
             </nav>
         </div>
     </header>
@@ -61,7 +61,7 @@
         </div>
     </section>
 
-    <section id="prestations">
+    <section id="prestations" class="linkable">
 
         <div class="h2-prestations">
             <h2>Prestations</h2>
@@ -80,7 +80,7 @@
 
             </article>
             <article class="amenagement">
-                <div class="galerie-prestations-descriptions">
+                <div class="galerie-prestations-descriptions descriptions-left">
                     <h3>Aménagement sur mesure</h3>
                     <p>Conception de mobilier intégré et d'espaces adaptés à vos besoins : bibliothèques, rangements,
                         cuisines, bureaux...</p>
@@ -114,27 +114,35 @@
             <div class="galerie-realisations">
                 <article>
                     <img src="asset/im3rd-media-FJZtZldA-uE-unsplash.jpg" alt="">
-                    <h3>Appartement Haussmannien – Lyon 6e</h3>
-                    <p>Rénovation complète d’un appartement de 120 m² : ouverture des espaces, mise en valeur des
+                    <div class="galerie-realisations-descriptions">
+                        <h3>Appartement Haussmannien – Lyon 6e</h3>
+                        <p>Rénovation complète d’un appartement de 120 m² : ouverture des espaces, mise en valeur des
                         moulures et création d’une cuisine contemporaine contrastée.</p>
+                    </div>
                 </article>
                 <article>
                     <img src="asset/jean-luc-benazet-oOvzE2L-n1A-unsplash.jpg" alt="">
-                    <h3>Maison contemporaine – Annecy</h3>
-                    <p>Aménagement intérieur complet : création d’un grand espace de vie traversant, matériaux naturels
+                    <div class="galerie-realisations-descriptions">
+                        <h3>Maison contemporaine – Annecy</h3>
+                        <p>Aménagement intérieur complet : création d’un grand espace de vie traversant, matériaux naturels
                         et mobilier sur mesure en bois clair.</p>
+                    </div>
                 </article>
                 <article>
                     <img src="asset/hakim-menikh-lcoAS3tYlx4-unsplash.jpg" alt="">
-                    <h3>Studio étudiant - Villeurbanne</h3>
-                    <p>Optimisation d’un petit espace de 25 m² avec mobilier modulable et ambiance minimaliste
+                    <div class="galerie-realisations-descriptions">
+                        <h3>Studio étudiant - Villeurbanne</h3>
+                        <p>Optimisation d’un petit espace de 25 m² avec mobilier modulable et ambiance minimaliste
                         chaleureuse.</p>
+                    </div>
                 </article>
                 <article>
                     <img src="asset/tem-rysh-F6-U5fGAOik-unsplash.jpg" alt="">
-                    <h3>Boutique artisanale – Croix-Rousse</h3>
-                    <p>Transformation d’un ancien atelier en boutique lumineuse : jeu de textures entre béton ciré, bois
+                    <div class="galerie-realisations-descriptions">
+                        <h3>Boutique artisanale – Croix-Rousse</h3>
+                        <p>Transformation d’un ancien atelier en boutique lumineuse : jeu de textures entre béton ciré, bois
                         brut et verrières d’atelier. </p>
+                    </div>
                 </article>
             </div>
 
@@ -157,8 +165,11 @@
                         </div>
                         <div>
                             <p>Commentaire :</p>
-                            <p>Clémence a su repenser notre espace avec beaucoup d’intelligence et de goût. Le résultat
+                            <div class="comments">
+                                <p>Clémence a su repenser notre espace avec beaucoup d’intelligence et de goût. Le résultat
                                 est à la fois pratique et sublime.</p>
+                            </div>
+                            
                         </div>
                     </div>
                 </article>
@@ -174,8 +185,11 @@
                         </div>
                         <div>
                             <P>Commentaire :</P>
-                            <p>Un vrai sens du détail et une belle écoute de nos besoins. Les meubles sur mesure sont
+                            <div class="comments">
+                                <p>Un vrai sens du détail et une belle écoute de nos besoins. Les meubles sur mesure sont
                                 parfaits et l’espace respire.</p>
+                            </div>
+                            
                         </div>
                     </div>
                 </article>
@@ -190,8 +204,11 @@
                         </div>
                         <div>
                             <p>Commentaire :</p>
-                            <p>J’adore la nouvelle ambiance de mon salon : couleurs apaisantes, lumière retravaillée, et
+                            <div class="comments">
+                                <p>J’adore la nouvelle ambiance de mon salon : couleurs apaisantes, lumière retravaillée, et
                                 des matières nobles. Je recommande à 100 %.</p>
+                            </div>
+                            
                         </div>
                     </div>
 
@@ -202,21 +219,26 @@
 </body>
 
 <footer>
-    <div>
+    <div class="footer-row">
         <div>
-            <img src="asset/logo.png" alt="">
+            <img src="asset/logo redimensioned.png" alt="">
         </div>
         <div class="footer-content">
             <div class="footer-contacts">
                 <h4>Contacts</h4>
-                <a href="mailto:">contact@clemencerivierestudio.fr</a>
-                <a href="tel:+">+33 7 45 67 88 77</a>
+                <div class="footer-texts-gap">
+                    <a href="mailto:">contact@clemencerivierestudio.fr</a>
+                    <a href="tel:+">+33 7 45 67 88 77</a>
+                </div>
             </div>
             <div>
                 <h4>Réseaux sociaux</h4>
-                <p>Facebook</p>
-                <p>Instagram</p>
-                <p>TikTok</p>
+                <div class="footer-texts-gap">
+                    <p>Facebook</p>
+                    <p>Instagram</p>
+                    <p>TikTok</p>
+                </div>
+                
             </div>
         </div>
     </div>
