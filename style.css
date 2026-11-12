@@ -73,7 +73,7 @@ nav a {
 .hero {
     background-image: url(asset/couverture-dada-design-9KGB4HspwsM-unsplash.jpg);
     background-size: cover;
-    min-height: 100vh;
+    min-height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
