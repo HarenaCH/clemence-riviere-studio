@@ -4,6 +4,10 @@
     font-family: "Crimson Text", serif; 
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     position: relative;
 }
@@ -31,12 +35,16 @@ p {
 header {
     background: rgba(0, 0, 0, 0.35);
     position: absolute;
-    position: sticky top;
+    position: sticky;
+    top:0;
+    z-index: 9999;
     width: 100%;
     height: 100px;
 }
 
 header img {
+    padding-left: 32px;
+    padding-top: 8px;
     max-width: 200px;
     max-height: 150px;
 }
@@ -55,49 +63,71 @@ nav {
 }
 
 nav a {
-    color: #2E2A26;
+    color: #F9EFE7;
     text-decoration: none;
 }
 
 
 /* SECTION - HERO */
-.hero h2 {
+.hero > h2 {
     margin-top: 120px;
-    text-transform: uppercase;
     font-size: 40px;
     font-family: "Crimson Text", serif;
     font-weight: 400;
     font-style: normal;
 }
 
-.hero {
+#hero {
+    color: #F9EFE7;
+    isolation: isolate;
     background-image: url(asset/couverture-dada-design-9KGB4HspwsM-unsplash.jpg);
     background-size: cover;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
     min-height: 500px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    padding-bottom: 72px;
 }
 
 /* .hero::before {
   content: "";
   position: absolute;
-  inset: 0;
-  background-image: url(asset/couverture-dada-design-9KGB4HspwsM-unsplash.jpg);
-  background-size: cover;
+  inset: 0; */
+  /* background-image: url(asset/couverture-dada-design-9KGB4HspwsM-unsplash.jpg);
+  background-size: cover; 
   background-position: center;
-  opacity: 0.4; 
-  z-index: -1;  
-} */
+  opacity: 0.4;  */
+  /* background: rgba(0, 0, 0, 0.50);
+}  */
 
-.hero-container {
+.hero > * {
+    position: relative;
+    z-index: 1;  
+}
+
+/* .hero-wrapper {
     margin: 0;
     background-color: rgba(0, 0, 0, 0.35);
     min-width: 100%;
     min-height: 100%;
+} */
+
+.hero-container {
+    margin-left: 20%;
+    max-height: 200px;
+    min-width: 60%;
+    
+    h2 {
+        text-transform: uppercase;
+        text-align: left;
+    }
 }
+   
 
 .bouton {
+    color: #F9EFE7;
     margin: 50px 0;
     display: flex;
     gap: 30px;
@@ -105,10 +135,10 @@ nav a {
 
 .bouton a{
     text-decoration: none;
-    border: 2px solid #2E2A26;
+    border: 2px solid #F9EFE7;
     border-radius: 4px;
     padding: 5px 15px;
-    color:#2E2A26; 
+    color:#F9EFE7; 
 }
 
 .bouton .voir {
@@ -116,28 +146,31 @@ nav a {
 }
 
 /* SECTION - PROMESSES */
+#promesses {
+    min-height: 500px;
+    background-color: #F9EFE7;
+    padding-bottom: 72px;
+}
+
 .promesses-content {
     max-width: 100%;
-    margin-bottom: 72px;
     padding: 0 72px 0 72px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-}
 
-.left-text {
-    margin: 24px 0 24px 0;
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-}
+    img{
+        min-height: 60vh;
+        min-width: 500px;
+    }
 
-.right-text{
-    margin: 24px 0 24px 0;
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
+    p {
+        margin: 64px;
+        font-size: 16px;
+        padding-left: 12px;
+        border-left: solid #2E2A26 2px;
+    }
 }
 
 /* SECTION - PRESTATIONS */
@@ -147,7 +180,7 @@ h2 {
     text-align: center;
 }
 
-.prestations {
+#prestations {
     background-color: #2E2A26;
     color: #F9EFE7;
 }
@@ -189,10 +222,14 @@ h2 {
     text-align: center;
 }
 
-.realisations {
+#realisations {
     background-color:#F9EFE7;
     color: #2E2A26;
     padding-bottom: 120px;
+
+    h2 {
+        padding-bottom: 12px;
+    }
 }
 
 img {
@@ -221,7 +258,7 @@ img {
 
 
 /* SECTION - TEMOIGNAGES */
-.temoignages {
+#temoignages {
     padding-bottom: 120px;
 }
 
@@ -245,6 +282,15 @@ img {
     display: flex;
     flex-direction: column;
     gap: 32px
+}
+
+.name {
+    width: 100%;
+    margin-bottom: 32px;
+    border-bottom: solid #F9EFE7;
+    display: flex;
+    justify-content: end;
+    align-items: end;
 }
 
 
@@ -275,6 +321,13 @@ footer {
 .footer-contacts {
     display: flex;
     flex-direction: column;
+}
+
+img {
+    padding-left: 32px;
+    padding-bottom: 8px;
+    max-width: 200px;
+    max-height: 150px;
 }
 
 .copyright {
