@@ -291,19 +291,24 @@ img {
 .comment-section {
     display: flex;
     flex-direction: column;
-    gap: 32px
+    gap: 18px
 }
 
 .comments {
     margin-top: 8px;
-    padding: 12px 12px 4px 4px;
+    padding: 8px 12px 20px 4px;
     border: #F9EFE7 solid 1px;
     border-radius: 5px;
 }
 
+.comments-rate-stars {
+    display: flex;
+    justify-content: flex-end;
+}
+
 .name {
     width: 100%;
-    margin-bottom: 32px;
+    margin-bottom: 12px;
     border-bottom: solid #F9EFE7;
     display: flex;
     justify-content: end;
